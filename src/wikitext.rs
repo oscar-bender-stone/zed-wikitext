@@ -42,7 +42,10 @@ impl WikitextExtension {
         };
 
         if let Some(path) = worktree.which("wikitext-lsp") {
-            return Ok(WikitextLspBinary { path, args: () });
+            return Ok(WikitextLspBinary {
+                path,
+                args: binary_args,
+            });
         };
 
         if let Some(path) = &self.cached_binary_path {
@@ -63,13 +66,17 @@ impl WikitextExtension {
             }
         }
 
+        println!("BAD: failed to get wikitext-lsp");
+
         // TODO: add user option to add wikitext_lsp.
         // This will NOT be run unless user-configured.
         // zed::set_language_server_installation_status(
         //             language_server_id,
         //             &zed::LanguageServerInstallationStatus::CheckingForUpdate,
         //         );
-        return None;
+        return Err(String::from(
+            "Failed to find wikitext-lsp on PATH. Make sure to install it through node.",
+        ));
     }
 }
 
@@ -87,10 +94,10 @@ impl zed::Extension for WikitextExtension {
     ) -> Result<zed::Command> {
         let wikitext_binary = self.language_server_binary(language_server_id, worktree)?;
         Ok(zed::Command {
-            command: wikitext_binary,
+            command: wikitext_binary.path,
             args: wikitext_binary
                 .args
-                .unwrap_or_else(|| vec!["stdio".to_owned()]),
+                .unwrap_or_else(|| vec!["--stdio".to_owned()]),
             env: Default::default(),
         })
     }

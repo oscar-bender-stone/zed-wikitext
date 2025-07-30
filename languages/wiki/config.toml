@@ -2,6 +2,6 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 name = "Wikitext"
-grammar = "wikitext"
+# grammar = "wikitext"
 path_suffixes = ["mediawiki", "wikitext", "wiki"]
 line_comments = ["<!-- -->"]

@@ -13,6 +13,6 @@ license = "GPL-3.0-or-later"
 name = "wikitext-lsp"
 language = "Wikitext"
 
-[grammars.wikitext]
-repository = "https://github.com/Ordoviz/tree-sitter-mediawiki"
-rev = "1340c1b"
+# [grammars.wikitext]
+# repository = "https://github.com/Ordoviz/tree-sitter-mediawiki"
+# rev = "1340c1bf8a0379b49318ab237fd43aa3cffcad5b"

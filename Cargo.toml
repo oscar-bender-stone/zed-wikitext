@@ -4,6 +4,9 @@
 [package]
 name = "zed_wikitext"
 version = "0.1.0"
+edition = "2021"
+publish = false
+license = "GPL-3.0-or-later"
 
 [lib]
 path = "src/wikitext.rs"
@@ -11,4 +14,3 @@ crate-type = ["cdylib"]
 
 [dependencies]
 zed_extension_api = "0.1.0"
-smol = "0.2"
