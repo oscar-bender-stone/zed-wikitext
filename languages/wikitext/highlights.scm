@@ -1,9 +1,12 @@
 (comment) @comment
 
-(h1) @text.title
-; (wikitarget) @link_uri
-; (external_link) @link_uri
-; (wikilabel) @link_text
+(heading) @text.title
+(wikilink) @link_uri
+(external_link) @link_uri
+(wikilabel) @link_text
+(category) @label
+(file) @label
+(image) @label
 
 [
     (bl1)
