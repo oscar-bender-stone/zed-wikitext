@@ -1,0 +1,18 @@
+# SPDX-FileCopyrightText: Oscar Bender-Stone <oscar-bender-stone@protonmail.com> # SPDX-LicenseIdentifier: GPL-3.0-or-later
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+id = "wikitext"
+name = "Wikitext"
+description = "Wikitext support."
+version = "0.1.0"
+schema_version = 1
+authors = ["Oscar Bender-Stone <oscar-bender-stone@protonmail.com>"]
+license = "GPL-3.0-or-later"
+
+[language_servers.wikitext]
+name = "wikitext-lsp"
+language = "Wikitext"
+
+[grammars.wikitext]
+repository = "https://github.com/Ordoviz/tree-sitter-mediawiki"
+rev = "1340c1b"

@@ -1,0 +1,14 @@
+<!-- SPDX-FileCopyrightText: 2025 Oscar Bender-Stone <oscar-bender-stone@protonmail.com> -->
+<!-- SPDX-LicenseIdentifier: CC0-1.0 -->
+
+= Zed Wikitext Extension =
+
+== Credits ==
+- [[https://github.com/Frederisk/Wikitext-VSCode-Extension]]:
+    Modified under the MIT license.
+- [[https://github.com/zed-industries/zed/tree/extensions/toml]]:
+    Modified under the Apache-2.0 license.
+
+== License ==
+    SPDX-FileCopyrightText: 2025 Oscar Bender-Stone <oscar-bender-stone@protonmail.com
+    SPDX-License-Identifier: GPL-3.0-or-later

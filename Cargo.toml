@@ -1,0 +1,14 @@
+# SPDX-FileCopyrightText: 2025 Oscar Bender-Stone <oscar-bender-stone@protonmail.com>
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+[package]
+name = "zed_wikitext"
+version = "0.1.0"
+
+[lib]
+path = "src/wikitext.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+zed_extension_api = "0.1.0"
+smol = "0.2"
